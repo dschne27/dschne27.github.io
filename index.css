@@ -1,1 +1,15 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.title
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.headshot
