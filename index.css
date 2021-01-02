@@ -1,25 +1,110 @@
-.title {
-    width: 300px;
-    margin: auto;
+h1 {
+    font-family: 'K2D', sans-serif;
 }
 
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-items: center;
+    align-items: center;
 }
 
-.headshot {
-    transform: scale(0.5,0.5);
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
+.name1 {
+
+}
+
+.nav {
+    grid-column-start: 1;
+    grid-column-end:  3;
+    grid-row: 2 / 3;
+    text-align: center;
+
+}
+
+
+img {
+  transform: scale(0.5,0.5);
+  border-radius: 50%;
+
+}
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.middle {
+    font-family: 'K2D', sans-serif;
+}
+
+a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+a:hover {
+  color: #000;
+}
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 8em;
+  }
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
