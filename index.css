@@ -53,6 +53,9 @@ a {
     color: #000;
     text-decoration: none;
     font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 
 }
 a:before {
@@ -75,7 +78,7 @@ a:hover {
   color: #000;
 }
 
-/* .text_1 {
+.text_1 {
   overflow: hidden;
   white-space: nowrap;
   animation: typewriter;
@@ -109,4 +112,4 @@ a:hover {
   50% {
     opacity: 1;
   }
-} */
+}
